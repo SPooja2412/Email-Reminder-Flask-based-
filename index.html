@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Reminder</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f9; padding: 40px; }
+        form { background: white; padding: 20px; border-radius: 10px; max-width: 400px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: #007BFF; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; }
+        button:hover { background: #0056b3; }
+        h2 { text-align: center; color: #333; }
+    </style>
+</head>
+<body>
+    <h2>📧 Email Reminder Scheduler</h2>
+    <form method="POST">
+        <label>Sender Email:</label>
+        <input type="email" name="sender" required>
+
+        <label>App Password:</label>
+        <input type="password" name="password" required>
+
+        <label>Receiver Email:</label>
+        <input type="email" name="receiver" required>
+
+        <label>Subject:</label>
+        <input type="text" name="subject" required>
+
+        <label>Message:</label>
+        <textarea name="body" rows="4" required></textarea>
+
+        <label>Time (24hr format):</label>
+        <input type="text" name="time" required>
+
+        <button type="submit">Schedule Email</button>
+    </form>
+</body>
+</html>

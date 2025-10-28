@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reminder Scheduled</title>
+    <style>
+        body { font-family: Arial; background: #eaf4ff; padding: 40px; text-align: center; }
+        .box { background: white; padding: 25px; border-radius: 10px; display: inline-block; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { color: #007BFF; }
+        p { color: #333; font-size: 16px; }
+        span { font-weight: bold; color: #555; }
+        a { display: inline-block; margin-top: 15px; text-decoration: none; background: #007BFF; color: white; padding: 8px 12px; border-radius: 5px; }
+        a:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>✅ Email Reminder Scheduled Successfully!</h2>
+        <p><span>From:</span> {{ sender }}</p>
+        <p><span>To:</span> {{ receiver }}</p>
+        <p><span>Subject:</span> {{ subject }}</p>
+        <p><span>Message:</span> {{ body }}</p>
+        <p><span>Scheduled Time:</span> {{ time_input }}</p>
+        <a href="/">🔙 Schedule Another</a>
+    </div>
+</body>
+</html>
